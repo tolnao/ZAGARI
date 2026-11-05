@@ -208,6 +208,61 @@
 
         </section>
 
+
+<section class="formulario-contacto">
+
+    <h2>Envíanos un mensaje</h2>
+
+    <p>
+        ¿Tienes alguna pregunta?
+        Completa el formulario y con gusto te atenderemos.
+    </p>
+
+    <form id="formularioContacto" novalidate>
+
+        <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+            >
+        </div>
+
+        <div class="campo-formulario">
+            <label for="correo">Correo electrónico</label>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Escribe tu correo"
+            >
+        </div>
+
+        <div class="campo-formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje"
+                rows="5"
+            ></textarea>
+        </div>
+
+
+<button type="submit" class="boton-formulario">
+    Enviar mensaje
+</button>
+
+<p id="resultadoFormulario" role="status" aria-live="polite"></p>
+
+        <p id="resultadoFormulario" role="status" aria-live="polite"></p>
+
+    </form>
+
+</section>
+
     </main>
     <footer class="pie-pagina">
 
@@ -244,8 +299,6 @@
         <div class="linea-footer"></div>
 
     </footer>
-
+ <script src="js/contacto.js"></script>
 </body>
-
 </html>
-```
