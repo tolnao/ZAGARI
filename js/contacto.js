@@ -61,3 +61,37 @@ function mostrarOcultarEnvio(evento) {
 }
 
 botonDetallesEnvio.addEventListener("click", mostrarOcultarEnvio);
+
+const datosEnvios = [
+    {
+        titulo: "Tiempo estimado",
+        detalle: "Cotiza según tu destino"
+    },
+    {
+        titulo: "Costo de envío",
+        detalle: "Confirmar al consultar"
+    },
+    {
+        titulo: "Condiciones",
+        detalle: "Acuerda los detalles antes de comprar"
+    }
+];
+
+datosEnvios.forEach(function(envio) {
+
+    const fila = document.createElement("div");
+    fila.classList.add("fila-envio");
+
+    const titulo = document.createElement("span");
+    titulo.textContent = envio.titulo + ":";
+
+    const detalle = document.createElement("p");
+    detalle.textContent = envio.detalle;
+
+    fila.appendChild(titulo);
+    fila.appendChild(detalle);
+
+    detallesEnvio.appendChild(fila);
+
+});
+
