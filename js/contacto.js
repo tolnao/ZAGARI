@@ -37,11 +37,27 @@ formulario.addEventListener("submit", function(evento) {
         return;
     }
 
-
     resultado.textContent = "¡Gracias por tu mensaje! En ZAGARI agradecemos que te pongas en contacto con nosotros.";
     resultado.style.color = "green";
 
     formulario.reset();
 
-
 });
+
+const botonDetallesEnvio = document.getElementById("botonDetallesEnvio");
+
+const detallesEnvio = document.getElementById("detallesEnvio");
+
+function mostrarOcultarEnvio(evento) {
+
+    evento.preventDefault();
+
+    if (detallesEnvio.hidden) {
+        detallesEnvio.hidden = false;
+    } else {
+        detallesEnvio.hidden = true;
+    }
+
+}
+
+botonDetallesEnvio.addEventListener("click", mostrarOcultarEnvio);
