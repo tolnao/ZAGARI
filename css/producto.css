@@ -111,7 +111,6 @@ a {
 .menu .activo::after {
     width: 100%;
 }
-
 .acciones {
     display: flex;
     align-items: center;
@@ -189,6 +188,7 @@ a {
 .miniatura.activa {
     border: 2px solid #c89f52;
 }
+
 .imagen-principal {
     width: 100%;
     height: 425px;
