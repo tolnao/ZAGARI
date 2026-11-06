@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contacto | Zagari</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
 
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 
 <body>
-
-    <!-- ENCABEZADO -->
     <header class="encabezado">
 
         <div class="marca">
@@ -43,9 +42,6 @@
         </div>
 
     </header>
-
-
-    <!-- PORTADA DE CONTACTO -->
     <section class="portada-contacto">
 
         <img src="img/kiss3.jpeg"
@@ -70,15 +66,8 @@
         </div>
 
     </section>
-
-
-    <!-- INFORMACIÓN DE CONTACTO -->
     <main class="seccion-contacto">
-
-        <!-- COLUMNA IZQUIERDA -->
         <section class="datos-contacto">
-
-            <!-- WHATSAPP -->
             <article class="tarjeta-contacto">
 
                 <div class="informacion-contacto">
@@ -103,9 +92,6 @@
                 </a>
 
             </article>
-
-
-            <!-- INSTAGRAM -->
             <article class="tarjeta-contacto">
 
                 <div class="informacion-contacto">
@@ -130,9 +116,6 @@
                 </a>
 
             </article>
-
-
-            <!-- UBICACIÓN -->
             <article class="tarjeta-contacto tarjeta-simple">
 
                 <div class="informacion-contacto">
@@ -149,9 +132,6 @@
                 </div>
 
             </article>
-
-
-            <!-- HORARIOS -->
             <article class="tarjeta-contacto tarjeta-simple">
 
                 <div class="informacion-contacto">
@@ -172,9 +152,6 @@
             </article>
 
         </section>
-
-
-        <!-- COLUMNA DERECHA -->
         <section class="envios">
 
             <div class="titulo-envios">
@@ -231,10 +208,62 @@
 
         </section>
 
+
+<section class="formulario-contacto">
+
+    <h2>Envíanos un mensaje</h2>
+
+    <p>
+        ¿Tienes alguna pregunta?
+        Completa el formulario y con gusto te atenderemos.
+    </p>
+
+    <form id="formularioContacto" novalidate>
+
+        <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+            >
+        </div>
+
+        <div class="campo-formulario">
+            <label for="correo">Correo electrónico</label>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Escribe tu correo"
+            >
+        </div>
+
+        <div class="campo-formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje"
+                rows="5"
+            ></textarea>
+        </div>
+
+
+<button type="submit" class="boton-formulario">
+    Enviar mensaje
+</button>
+
+<p id="resultadoFormulario" role="status" aria-live="polite"></p>
+
+        <p id="resultadoFormulario" role="status" aria-live="polite"></p>
+
+    </form>
+
+</section>
+
     </main>
-
-
-    <!-- PIE DE PÁGINA -->
     <footer class="pie-pagina">
 
         <div class="linea-footer"></div>
@@ -270,8 +299,6 @@
         <div class="linea-footer"></div>
 
     </footer>
-
+ <script src="js/contacto.js"></script>
 </body>
-
 </html>
-```

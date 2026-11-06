@@ -1,3 +1,8 @@
+```css
+/* =========================
+   CONFIGURACION GENERAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +14,19 @@ body {
     color: #111111;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+
 .barra-superior {
     height: 28px;
+
     background-color: #111111;
     color: white;
 
@@ -24,8 +40,14 @@ body {
     font-size: 12px;
 }
 
+
+/* =========================
+   ENCABEZADO
+========================= */
+
 .encabezado {
     height: 108px;
+
     background-color: white;
 
     display: grid;
@@ -35,44 +57,64 @@ body {
     padding: 0 65px;
 }
 
+
+/* MARCA */
+
 .marca {
     display: flex;
     align-items: center;
+
     gap: 18px;
 }
 
 .logo {
     width: 65px;
     height: 65px;
+
     object-fit: contain;
 }
 
 .marca h1 {
     font-family: Georgia, serif;
+
     font-size: 32px;
     font-weight: normal;
+
     letter-spacing: 1px;
 }
+
+
+/* =========================
+   MENU
+========================= */
 
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 65px;
 }
 
 .menu a {
     color: #111111;
-    text-decoration: none;
+
     font-family: Georgia, serif;
     font-size: 16px;
+
     padding: 8px 0;
+
     position: relative;
 }
 
+
+/* RAYITA DORADA */
+
 .menu a::after {
     content: "";
+
     position: absolute;
+
     left: 0;
     bottom: 0;
 
@@ -80,93 +122,101 @@ body {
     height: 2px;
 
     background-color: #c89f52;
+
+    transition: width 0.3s ease;
 }
 
-.menu a:hover::after,
+
+/* MOUSE ENCIMA */
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* PAGINA ACTUAL */
+
 .menu .activo::after {
     width: 100%;
 }
+
+
+/* =========================
+   ICONOS DEL HEADER
+========================= */
 
 .acciones {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     gap: 28px;
 }
 
-.icono-buscar {
-    width: 22px;
-    height: 22px;
 
-    border: 2px solid #111111;
-    border-radius: 50%;
+/* BUSCAR */
 
-    position: relative;
+.buscar-header {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.icono-buscar::after {
-    content: "";
+.buscar-header:hover {
+    filter: brightness(0) saturate(100%)
+            invert(69%) sepia(34%) saturate(745%)
+            hue-rotate(358deg) brightness(90%) contrast(89%);
 
-    width: 9px;
-    height: 2px;
-
-    background-color: #111111;
-
-    position: absolute;
-    right: -7px;
-    bottom: -4px;
-
-    transform: rotate(45deg);
+    transform: scale(1.08);
 }
 
-.icono-instagram {
-    width: 26px;
-    height: 26px;
 
-    border: 2px solid #111111;
-    border-radius: 7px;
+/* INSTAGRAM */
 
-    position: relative;
+.instagram-header {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.icono-instagram::before {
-    content: "";
 
-    width: 9px;
-    height: 9px;
+/* INSTAGRAM NEGRO A COLOR */
 
-    border: 2px solid #111111;
-    border-radius: 50%;
+.instagram-header:hover {
+    content: url("../img/icons/ig2.png");
 
-    position: absolute;
-    top: 6px;
-    left: 6px;
+    transform: scale(1.1);
 }
 
-.icono-instagram::after {
-    content: "";
 
-    width: 3px;
-    height: 3px;
-
-    background-color: #111111;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 4px;
-    right: 4px;
-}
+/* =========================
+   NUESTRA HISTORIA
+========================= */
 
 .hero-nosotros {
     height: 300px;
 
-    background-image: url("../img/cartera\ coach\ lila.png");
+    background-image: url("../img/cartera coach lila.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     position: relative;
 }
+
+
+/* TEXTO */
 
 .historia {
     position: absolute;
@@ -178,120 +228,218 @@ body {
 }
 
 .historia h2 {
+    margin-bottom: 8px;
+
     font-family: Georgia, serif;
+
     font-size: 18px;
     font-weight: normal;
-
-    margin-bottom: 8px;
 }
 
 .historia p {
     font-family: Georgia, serif;
+
     font-size: 9px;
     line-height: 1.5;
+
     color: rgba(0, 0, 0, 0.65);
 }
+
+
+/* FRASE INCLINADA */
+
 .historia > span {
     display: inline-block;
+
     width: fit-content;
 
     margin-top: 25px;
     margin-left: 65px;
 
     font-family: Georgia, serif;
+
     font-size: 18px;
     font-style: italic;
 
     color: rgba(110, 85, 55, 0.75);
 
-    transform: rotate(-12deg) !important;
+    transform: rotate(-12deg);
     transform-origin: left center;
 }
+
+
+/* =========================
+   MISION Y VISION
+========================= */
+
 .mision-vision {
     display: flex;
     justify-content: center;
+
     gap: 30px;
 
     margin-top: 16px;
 }
 
+
+/* TARJETAS */
+
 .tarjeta-info-nosotros {
     width: 390px;
-    height: 58px;
+    height: 65px;
 
     background-color: white;
 
     display: flex;
     align-items: center;
 
-    padding: 0 35px;
-
     gap: 18px;
 
+    padding: 0 35px;
+
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
+
+    transition: 0.3s;
 }
+
+.tarjeta-info-nosotros:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LINEA DORADA */
 
 .linea-corta {
     width: 50px;
     height: 2px;
 
     background-color: #c89f52;
+
+    flex-shrink: 0;
 }
 
+
+/* ICONOS */
+
 .icono-nosotros {
-    color: #c89f52;
-    font-size: 28px;
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
 }
+
+.icono-nosotros img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.tarjeta-info-nosotros:hover .icono-nosotros img {
+    transform: scale(1.12);
+}
+
+
+/* TEXTO */
 
 .tarjeta-info-nosotros h3 {
     font-family: Georgia, serif;
+
     font-size: 18px;
     font-weight: normal;
 }
 
 .tarjeta-info-nosotros p {
     font-family: Georgia, serif;
+
     font-size: 9px;
 
     color: #777777;
 }
+
+
+/* =========================
+   VALORES
+========================= */
+
 .valores {
     margin-top: 18px;
 }
 
+
+/* TITULO */
+
 .titulo-valores {
-    width: 820px;
-    margin: 0 auto 15px;
+    width: 92%;
+    max-width: 1000px;
+
+    margin: 0 auto 22px;
 
     display: flex;
     align-items: center;
-    gap: 35px;
+    justify-content: center;
+
+    gap: 70px;
 }
 
 .titulo-valores span {
     flex: 1;
+
     height: 2px;
+
     background-color: #c89f52;
 }
 
 .titulo-valores h2 {
+    margin: 0;
+
     font-family: Georgia, serif;
-    font-size: 22px;
+
+    font-size: 25px;
     font-weight: normal;
+
     white-space: nowrap;
 }
 
+
+/* =========================
+   LISTA DE VALORES
+========================= */
+
 .lista-valores {
-    width: 800px;
+    width: 90%;
+    max-width: 950px;
+
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
 }
 
+
+/* CADA VALOR */
+
 .valor {
+    min-height: 95px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    padding: 10px 20px;
+
+    padding: 0 30px;
 
     border-right: 1px solid #cfc5ba;
 }
@@ -300,30 +448,73 @@ body {
     border-right: none;
 }
 
+
+/* ICONOS */
+
 .icono-valor {
-    color: #c89f52;
-    font-size: 26px;
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     margin-bottom: 5px;
 }
 
+.icono-valor img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+
+/* TEXTO */
+
 .valor h3 {
+    margin: 0;
+
     font-family: Georgia, serif;
-    font-size: 17px;
+
+    font-size: 23px;
     font-weight: normal;
 
     color: #75685e;
+
+    transition: 0.3s;
 }
+
+
+/* HOVER */
+
+.valor:hover .icono-valor img {
+    transform: scale(1.15);
+}
+
+.valor:hover h3 {
+    color: #c89f52;
+}
+
+
+/* =========================
+   BOTON CATALOGO
+========================= */
+
 .boton-nosotros-contenedor {
     display: flex;
     justify-content: center;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 
 .boton-nosotros {
-    width: 260px;
+    width: 300px;
     height: 42px;
 
     background-color: #111111;
@@ -335,15 +526,47 @@ body {
 
     padding: 0 18px;
 
-    text-decoration: none;
-
     font-family: Georgia, serif;
     font-size: 14px;
 
     border-radius: 2px;
+
+    transition: 0.3s;
 }
+
+
+/* FLECHA */
+
+.flecha-nosotros {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+
+    transition: 0.3s;
+}
+
+
+/* HOVER BOTON */
+
+.boton-nosotros:hover {
+    background-color: #c89f52;
+}
+
+.boton-nosotros:hover .flecha-nosotros {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 .pie-nosotros {
-    height: 65px;
+    min-height: 65px;
+
     background-color: #f7f0e8;
 
     display: flex;
@@ -351,11 +574,16 @@ body {
     justify-content: center;
 
     gap: 25px;
+
     padding: 0 30px;
 }
 
+
+/* LINEAS */
+
 .linea-pie {
     height: 2px;
+
     background-color: #c89f52;
 
     flex: 1;
@@ -364,6 +592,9 @@ body {
 .linea-pie-centro {
     max-width: 120px;
 }
+
+
+/* LOGO Y MARCA */
 
 .marca-pie {
     display: flex;
@@ -381,19 +612,27 @@ body {
 
 .marca-pie h2 {
     font-family: Georgia, serif;
+
     font-size: 27px;
     font-weight: normal;
 }
 
 .marca-pie p {
+    margin-top: 3px;
+
     font-family: Georgia, serif;
+
     font-size: 6px;
 
     color: #8a8178;
 
-    margin-top: 3px;
     white-space: nowrap;
 }
+
+
+/* =========================
+   INSTAGRAM FOOTER
+========================= */
 
 .instagram-pie {
     display: flex;
@@ -406,44 +645,70 @@ body {
 
 .instagram-pie p {
     font-family: Georgia, serif;
+
     font-size: 7px;
 }
 
-.instagram-pie .icono-instagram {
-    width: 23px;
-    height: 23px;
+.instagram-footer {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
+
+.instagram-footer:hover {
+    content: url("../img/icons/ig2.png");
+
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
 @media (max-width: 900px) {
-
-    .encabezado {
-        grid-template-columns: 1fr;
-        height: auto;
-        padding: 20px;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .marca {
-        justify-content: center;
-    }
-
-    .menu {
-        gap: 25px;
-        flex-wrap: wrap;
-    }
-
-    .acciones {
-        justify-content: center;
-    }
 
     .barra-superior {
         padding: 0 25px;
     }
 
-    .lista-productos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+
+    .encabezado {
+        height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 20px;
+
+        text-align: center;
     }
+
+
+    .marca {
+        justify-content: center;
+    }
+
+
+    .menu {
+        gap: 25px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .acciones {
+        justify-content: center;
+    }
+
+
+    /* MISION Y VISION */
 
     .mision-vision {
         padding: 0 30px;
@@ -453,20 +718,50 @@ body {
         width: 100%;
     }
 
-    .titulo-valores,
+
+    /* VALORES */
+
+    .titulo-valores {
+        width: 90%;
+
+        gap: 30px;
+    }
+
     .lista-valores {
         width: 90%;
     }
+
+    .valor {
+        padding: 0 15px;
+    }
+
+    .valor h3 {
+        font-size: 19px;
+    }
+
 }
+
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
 @media (max-width: 600px) {
+
+    /* BARRA */
 
     .barra-superior {
         height: auto;
+
         padding: 8px 15px;
+
         gap: 10px;
 
         font-size: 9px;
     }
+
+
+    /* HEADER */
 
     .encabezado {
         padding: 15px;
@@ -489,35 +784,28 @@ body {
         font-size: 13px;
     }
 
-    .hero {
-        height: 420px;
+
+    /* HISTORIA */
+
+    .hero-nosotros {
+        height: 390px;
+
+        background-position: center;
     }
 
-    .hero-texto {
+    .historia {
         left: 25px;
-        top: 40px;
+        top: 150px;
+
+        width: 230px;
     }
 
-    .hero-texto h2 {
-        font-size: 32px;
+    .historia > span {
+        margin-left: 30px;
     }
 
-    .detalles-hero {
-        left: 25px;
-        gap: 25px;
-    }
 
-    .lista-productos {
-        grid-template-columns: 1fr;
-    }
-
-    .filtros-catalogo {
-        padding: 15px;
-        margin-top: 0;
-
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+    /* MISION VISION */
 
     .mision-vision {
         flex-direction: column;
@@ -527,31 +815,90 @@ body {
 
     .tarjeta-info-nosotros {
         width: 100%;
+
+        min-height: 70px;
+
+        padding: 10px 20px;
     }
+
+    .linea-corta {
+        width: 30px;
+    }
+
+
+    /* TITULO VALORES */
 
     .titulo-valores {
         width: 90%;
+
         gap: 15px;
     }
+
+    .titulo-valores h2 {
+        font-size: 21px;
+    }
+
+
+    /* VALORES */
 
     .lista-valores {
         width: 90%;
 
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+
+        gap: 0;
     }
 
     .valor {
+        min-height: 110px;
+
         border-right: none;
+        border-bottom: 1px solid #cfc5ba;
     }
 
-    .pie-nosotros,
-    .pie-catalogo {
+    .valor:nth-child(odd) {
+        border-right: 1px solid #cfc5ba;
+    }
+
+    .valor:nth-child(3),
+    .valor:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    /* FOOTER */
+
+    .pie-nosotros {
         height: auto;
 
         flex-direction: column;
 
+        gap: 12px;
+
         padding: 20px;
-        gap: 10px;
     }
+
+    .linea-pie {
+        width: 80%;
+
+        flex: none;
+    }
+
+    .linea-pie-centro {
+        width: 50%;
+    }
+
+    .marca-pie {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .instagram-pie {
+        white-space: normal;
+
+        text-align: center;
+    }
+
 }
+```
