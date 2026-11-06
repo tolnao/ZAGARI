@@ -42,3 +42,20 @@ botonesFiltro.forEach(function (boton) {
         mostrarProductos();
     });
 });
+
+
+const categoriaInicial = new URLSearchParams(window.location.search).get("categoria");
+
+if (categoriaInicial && ["bolsas", "carteras", "belleza"].includes(categoriaInicial)) {
+
+    categoriaActual = categoriaInicial;
+
+    botonesFiltro.forEach(function (boton) {
+        boton.classList.toggle(
+            "activo-filtro",
+            boton.dataset.categoria === categoriaActual
+        );
+    });
+
+    mostrarProductos();
+}
