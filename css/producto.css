@@ -1,6 +1,4 @@
-/* =========================
-   CONFIGURACION GENERAL
-========================= */
+
 
 * {
     margin: 0;
@@ -20,9 +18,6 @@ a {
 }
 
 
-/* =========================
-   BARRA SUPERIOR
-========================= */
 
 .barra-superior {
     height: 42px;
@@ -54,11 +49,6 @@ a {
     filter: brightness(0) invert(1);
 }
 
-
-/* =========================
-   ENCABEZADO
-========================= */
-
 .encabezado {
     height: 75px;
     background-color: white;
@@ -88,10 +78,6 @@ a {
     letter-spacing: 1px;
 }
 
-
-/* =========================
-   MENU
-========================= */
 
 .menu {
     display: flex;
@@ -131,10 +117,6 @@ a {
 }
 
 
-/* =========================
-   ICONOS HEADER
-========================= */
-
 .acciones {
     display: flex;
     align-items: center;
@@ -167,11 +149,6 @@ a {
     transform: scale(1.1);
 }
 
-
-/* =========================
-   DETALLE DEL PRODUCTO
-========================= */
-
 .detalle-producto {
     width: 94%;
     max-width: 1200px;
@@ -184,11 +161,6 @@ a {
     gap: 40px;
 }
 
-
-/* =========================
-   GALERIA
-========================= */
-
 .galeria {
     display: grid;
     grid-template-columns: 125px 1fr;
@@ -196,10 +168,6 @@ a {
     gap: 16px;
 }
 
-
-/* =========================
-   MINIATURAS
-========================= */
 
 .miniaturas {
     display: flex;
@@ -229,11 +197,6 @@ a {
     border: 2px solid #c89f52;
 }
 
-
-/* =========================
-   IMAGEN GRANDE
-========================= */
-
 .imagen-principal {
     width: 100%;
     height: 425px;
@@ -251,11 +214,6 @@ a {
 
     display: block;
 }
-
-
-/* =========================
-   INFORMACION PRODUCTO
-========================= */
 
 .informacion-producto {
     padding: 5px 15px;
@@ -294,10 +252,6 @@ a {
 }
 
 
-/* =========================
-   LINEA DORADA
-========================= */
-
 .linea-producto {
     width: 100%;
     height: 1px;
@@ -307,10 +261,6 @@ a {
     margin: 18px 0;
 }
 
-
-/* =========================
-   DESCRIPCION
-========================= */
 
 .descripcion-producto {
     font-size: 12px;
