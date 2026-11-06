@@ -16,10 +16,6 @@ a {
 }
 
 
-/* =========================
-   ENCABEZADO
-   ========================= */
-
 .encabezado {
     width: 100%;
     height: 85px;
@@ -50,11 +46,6 @@ a {
     font-weight: normal;
     letter-spacing: 3px;
 }
-
-
-/* =========================
-   MENU
-   ========================= */
 
 .menu {
     display: flex;
@@ -90,10 +81,6 @@ a {
 }
 
 
-/* =========================
-   ICONOS HEADER
-   ========================= */
-
 .iconos-header {
     display: flex;
     align-items: center;
@@ -123,11 +110,6 @@ a {
     transform: scale(1.1);
 }
 
-
-/* =========================
-   PORTADA CONTACTO
-   ========================= */
-
 .portada-contacto {
     width: 100%;
     height: 350px;
@@ -144,11 +126,6 @@ a {
     object-fit: cover;
     object-position: center;
 }
-
-
-/* =========================
-   TEXTO PORTADA
-   ========================= */
 
 .texto-portada {
     position: absolute;
@@ -190,11 +167,6 @@ a {
     line-height: 1.3;
 }
 
-
-/* =========================
-   SECCION CONTACTO
-   ========================= */
-
 .seccion-contacto {
     width: 90%;
     max-width: 1200px;
@@ -215,11 +187,6 @@ a {
 
     gap: 12px;
 }
-
-
-/* =========================
-   TARJETAS
-   ========================= */
 
 .tarjeta-contacto {
     min-height: 67px;
@@ -242,11 +209,6 @@ a {
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
-
-
-/* =========================
-   INFORMACION CONTACTO
-   ========================= */
 
 .informacion-contacto {
     display: flex;
@@ -280,32 +242,17 @@ a {
     color: #555;
 }
 
-
-/* =========================
-   WHATSAPP NEGRO A COLOR
-   ========================= */
-
 .tarjeta-contacto:first-child:hover .icono-contacto {
     content: url("../img/icons/whatsapp (2).png");
 
     transform: scale(1.08);
 }
 
-
-/* =========================
-   INSTAGRAM NEGRO A COLOR
-   ========================= */
-
 .tarjeta-contacto:nth-child(2):hover .instagram-icono {
     content: url("../img/icons/ig2.png");
 
     transform: scale(1.08);
 }
-
-
-/* =========================
-   BOTON CONTACTO
-   ========================= */
 
 .boton-contacto {
     min-width: 170px;
@@ -348,11 +295,6 @@ a {
 .tarjeta-simple {
     justify-content: flex-start;
 }
-
-
-/* =========================
-   ENVIOS
-   ========================= */
 
 .envios {
     border: 1.5px solid #cda556;
@@ -423,11 +365,6 @@ a {
     color: #666;
 }
 
-
-/* =========================
-   BOTON ENVIOS
-   ========================= */
-
 .boton-envio {
     width: 100%;
     height: 36px;
@@ -467,11 +404,6 @@ a {
     transform: translateX(5px);
 }
 
-
-/* =========================
-   AVISO ENVIO
-   ========================= */
-
 .aviso-envio {
     margin-top: 13px;
 
@@ -494,11 +426,6 @@ a {
 
     color: #777;
 }
-
-
-/* =========================
-   FOOTER
-   ========================= */
 
 .pie-pagina {
     min-height: 90px;
@@ -553,11 +480,6 @@ a {
     margin-left: 5px;
 }
 
-
-/* =========================
-   INSTAGRAM FOOTER
-   ========================= */
-
 .instagram-footer {
     display: flex;
     align-items: center;
@@ -586,10 +508,6 @@ a {
     color: #555;
 }
 
-
-/* =========================================================
-   RESPONSIVE TABLET
-   ========================================================= */
 
 @media (max-width: 1024px) {
 
@@ -645,9 +563,6 @@ a {
         font-size: 42px;
     }
 
-
-    /* CONTACTO */
-
     .seccion-contacto {
         width: 92%;
 
@@ -673,24 +588,16 @@ a {
     }
 
 
-    /* ENVIOS */
-
     .envios {
         padding: 20px;
     }
 
-
-    /* FOOTER */
 
     .pie-pagina {
         gap: 20px;
     }
 }
 
-
-/* =========================================================
-   TABLET PEQUEÑA
-   ========================================================= */
 
 @media (max-width: 850px) {
 
@@ -728,15 +635,9 @@ a {
         padding: 10px 0;
     }
 
-
-    /* PORTADA */
-
     .texto-portada {
         left: 7%;
     }
-
-
-    /* CONTACTO */
 
     .seccion-contacto {
         grid-template-columns: 1fr;
@@ -758,27 +659,16 @@ a {
         max-width: 300px;
     }
 
-
-    /* FOOTER */
-
     .linea-footer {
         max-width: 100px;
     }
 }
-
-
-/* =========================================================
-   CELULAR
-   ========================================================= */
 
 @media (max-width: 600px) {
 
     body {
         overflow-x: hidden;
     }
-
-
-    /* HEADER */
 
     .encabezado {
         height: auto;
@@ -806,10 +696,6 @@ a {
 
         letter-spacing: 2px;
     }
-
-
-    /* MENU */
-
     .menu {
         width: 100%;
 
@@ -830,9 +716,6 @@ a {
         padding: 8px 0;
     }
 
-
-    /* ICONOS */
-
     .iconos-header {
         margin: 0;
 
@@ -843,10 +726,6 @@ a {
         width: 24px;
         height: 24px;
     }
-
-
-    /* PORTADA */
-
     .portada-contacto {
         height: 330px;
     }
@@ -879,9 +758,6 @@ a {
         font-size: 12px;
     }
 
-
-    /* SECCION CONTACTO */
-
     .seccion-contacto {
         width: 92%;
 
@@ -895,9 +771,6 @@ a {
 
         margin-bottom: 25px;
     }
-
-
-    /* TARJETAS */
 
     .tarjeta-contacto {
         min-height: auto;
@@ -934,9 +807,6 @@ a {
         font-size: 10px;
     }
 
-
-    /* BOTONES CONTACTO */
-
     .boton-contacto {
         width: 100%;
 
@@ -945,17 +815,12 @@ a {
         height: 40px;
     }
 
-
-    /* TARJETA SIMPLE */
-
     .tarjeta-simple {
         flex-direction: row;
 
         align-items: center;
     }
 
-
-    /* ENVIOS */
 
     .envios {
         width: 100%;
@@ -1000,9 +865,6 @@ a {
         height: 40px;
     }
 
-
-    /* FOOTER */
-
     .pie-pagina {
         min-height: auto;
 
@@ -1037,11 +899,6 @@ a {
         justify-content: center;
     }
 }
-
-
-/* =========================================================
-   CELULAR PEQUEÑO
-   ========================================================= */
 
 @media (max-width: 400px) {
 

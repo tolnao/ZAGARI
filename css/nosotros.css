@@ -1,9 +1,4 @@
-```css
-/* =========================
-   CONFIGURACION GENERAL
-========================= */
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,11 +13,6 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
-
-/* =========================
-   BARRA SUPERIOR
-========================= */
 
 .barra-superior {
     height: 28px;
@@ -41,10 +31,6 @@ a {
 }
 
 
-/* =========================
-   ENCABEZADO
-========================= */
-
 .encabezado {
     height: 108px;
 
@@ -56,9 +42,6 @@ a {
 
     padding: 0 65px;
 }
-
-
-/* MARCA */
 
 .marca {
     display: flex;
@@ -83,11 +66,6 @@ a {
     letter-spacing: 1px;
 }
 
-
-/* =========================
-   MENU
-========================= */
-
 .menu {
     display: flex;
     justify-content: center;
@@ -107,9 +85,6 @@ a {
     position: relative;
 }
 
-
-/* RAYITA DORADA */
-
 .menu a::after {
     content: "";
 
@@ -126,24 +101,14 @@ a {
     transition: width 0.3s ease;
 }
 
-
-/* MOUSE ENCIMA */
-
 .menu a:hover::after {
     width: 100%;
 }
-
-
-/* PAGINA ACTUAL */
 
 .menu .activo::after {
     width: 100%;
 }
 
-
-/* =========================
-   ICONOS DEL HEADER
-========================= */
 
 .acciones {
     display: flex;
@@ -152,9 +117,6 @@ a {
 
     gap: 28px;
 }
-
-
-/* BUSCAR */
 
 .buscar-header {
     width: 28px;
@@ -176,8 +138,6 @@ a {
 }
 
 
-/* INSTAGRAM */
-
 .instagram-header {
     width: 28px;
     height: 28px;
@@ -190,18 +150,11 @@ a {
 }
 
 
-/* INSTAGRAM NEGRO A COLOR */
-
 .instagram-header:hover {
     content: url("../img/icons/ig2.png");
 
     transform: scale(1.1);
 }
-
-
-/* =========================
-   NUESTRA HISTORIA
-========================= */
 
 .hero-nosotros {
     height: 300px;
@@ -214,9 +167,6 @@ a {
 
     position: relative;
 }
-
-
-/* TEXTO */
 
 .historia {
     position: absolute;
@@ -246,8 +196,6 @@ a {
 }
 
 
-/* FRASE INCLINADA */
-
 .historia > span {
     display: inline-block;
 
@@ -267,11 +215,6 @@ a {
     transform-origin: left center;
 }
 
-
-/* =========================
-   MISION Y VISION
-========================= */
-
 .mision-vision {
     display: flex;
     justify-content: center;
@@ -281,8 +224,6 @@ a {
     margin-top: 16px;
 }
 
-
-/* TARJETAS */
 
 .tarjeta-info-nosotros {
     width: 390px;
@@ -308,9 +249,6 @@ a {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
 
-
-/* LINEA DORADA */
-
 .linea-corta {
     width: 50px;
     height: 2px;
@@ -319,9 +257,6 @@ a {
 
     flex-shrink: 0;
 }
-
-
-/* ICONOS */
 
 .icono-nosotros {
     width: 38px;
@@ -347,9 +282,6 @@ a {
     transform: scale(1.12);
 }
 
-
-/* TEXTO */
-
 .tarjeta-info-nosotros h3 {
     font-family: Georgia, serif;
 
@@ -365,17 +297,10 @@ a {
     color: #777777;
 }
 
-
-/* =========================
-   VALORES
-========================= */
-
 .valores {
     margin-top: 18px;
 }
 
-
-/* TITULO */
 
 .titulo-valores {
     width: 92%;
@@ -410,10 +335,6 @@ a {
 }
 
 
-/* =========================
-   LISTA DE VALORES
-========================= */
-
 .lista-valores {
     width: 90%;
     max-width: 950px;
@@ -425,9 +346,6 @@ a {
 
     align-items: center;
 }
-
-
-/* CADA VALOR */
 
 .valor {
     min-height: 95px;
@@ -448,8 +366,6 @@ a {
     border-right: none;
 }
 
-
-/* ICONOS */
 
 .icono-valor {
     width: 48px;
@@ -474,8 +390,6 @@ a {
 }
 
 
-/* TEXTO */
-
 .valor h3 {
     margin: 0;
 
@@ -490,8 +404,6 @@ a {
 }
 
 
-/* HOVER */
-
 .valor:hover .icono-valor img {
     transform: scale(1.15);
 }
@@ -499,11 +411,6 @@ a {
 .valor:hover h3 {
     color: #c89f52;
 }
-
-
-/* =========================
-   BOTON CATALOGO
-========================= */
 
 .boton-nosotros-contenedor {
     display: flex;
@@ -535,8 +442,6 @@ a {
 }
 
 
-/* FLECHA */
-
 .flecha-nosotros {
     width: 18px;
     height: 18px;
@@ -549,8 +454,6 @@ a {
 }
 
 
-/* HOVER BOTON */
-
 .boton-nosotros:hover {
     background-color: #c89f52;
 }
@@ -558,11 +461,6 @@ a {
 .boton-nosotros:hover .flecha-nosotros {
     transform: translateX(5px);
 }
-
-
-/* =========================
-   FOOTER
-========================= */
 
 .pie-nosotros {
     min-height: 65px;
@@ -578,9 +476,6 @@ a {
     padding: 0 30px;
 }
 
-
-/* LINEAS */
-
 .linea-pie {
     height: 2px;
 
@@ -592,9 +487,6 @@ a {
 .linea-pie-centro {
     max-width: 120px;
 }
-
-
-/* LOGO Y MARCA */
 
 .marca-pie {
     display: flex;
@@ -629,11 +521,6 @@ a {
     white-space: nowrap;
 }
 
-
-/* =========================
-   INSTAGRAM FOOTER
-========================= */
-
 .instagram-pie {
     display: flex;
     align-items: center;
@@ -665,12 +552,6 @@ a {
 
     transform: scale(1.1);
 }
-
-
-/* =========================
-   RESPONSIVE TABLET
-========================= */
-
 @media (max-width: 900px) {
 
     .barra-superior {
@@ -707,9 +588,6 @@ a {
         justify-content: center;
     }
 
-
-    /* MISION Y VISION */
-
     .mision-vision {
         padding: 0 30px;
     }
@@ -717,9 +595,6 @@ a {
     .tarjeta-info-nosotros {
         width: 100%;
     }
-
-
-    /* VALORES */
 
     .titulo-valores {
         width: 90%;
@@ -741,11 +616,6 @@ a {
 
 }
 
-
-/* =========================
-   RESPONSIVE CELULAR
-========================= */
-
 @media (max-width: 600px) {
 
     /* BARRA */
@@ -759,10 +629,6 @@ a {
 
         font-size: 9px;
     }
-
-
-    /* HEADER */
-
     .encabezado {
         padding: 15px;
     }
@@ -783,10 +649,6 @@ a {
     .menu a {
         font-size: 13px;
     }
-
-
-    /* HISTORIA */
-
     .hero-nosotros {
         height: 390px;
 
@@ -803,10 +665,6 @@ a {
     .historia > span {
         margin-left: 30px;
     }
-
-
-    /* MISION VISION */
-
     .mision-vision {
         flex-direction: column;
 
@@ -825,9 +683,6 @@ a {
         width: 30px;
     }
 
-
-    /* TITULO VALORES */
-
     .titulo-valores {
         width: 90%;
 
@@ -837,9 +692,6 @@ a {
     .titulo-valores h2 {
         font-size: 21px;
     }
-
-
-    /* VALORES */
 
     .lista-valores {
         width: 90%;
@@ -864,10 +716,6 @@ a {
     .valor:nth-child(4) {
         border-bottom: none;
     }
-
-
-    /* FOOTER */
-
     .pie-nosotros {
         height: auto;
 
@@ -901,4 +749,3 @@ a {
     }
 
 }
-```
